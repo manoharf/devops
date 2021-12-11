@@ -3,26 +3,26 @@ pipeline {
   stages {
     stage('stage1') {
       steps {
-        sh '''echo "enter file name"
+        sh '''echo \'enter file name\'
 read file name
 if 
 then 
-echo "file exist"
+echo \'file exist\'
 else
-echo "file not exist"
+echo \'file not exist\'
 fi'''
       }
     }
 
     stage('stage2') {
       steps {
-        sh '''echo "enter string"
+        sh '''echo \'enter string\'
 read string 
 if [ -f $file ]
 then 
-echo "string exist"
+echo \'string exist\'
 else
-echo "string not exist"
+echo \'string not exist\'
 fi'''
       }
     }

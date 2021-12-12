@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "enter file name"
+
+read file name
+
+echo "enter the string"
+
+read string
+
+if [ -f $file ]
+then
+echo "find $string"
+grep -i $string $filename
+fi
+

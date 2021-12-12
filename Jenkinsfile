@@ -5,8 +5,12 @@ pipeline {
       steps {
         sh '''a=1
 b=2
+if [ $a == $b ]
+then
 echo \'a is equal to b\'
-echo \'a is not equal to b\''''
+else
+echo \'a is not equal to b\'
+fi'''
       }
     }
 
@@ -14,8 +18,12 @@ echo \'a is not equal to b\''''
       steps {
         sh '''a=1
 b=1
+is [ $a == $b ]
+then
 echo \'a is equal to b\'
-echo \'a is not equal b\''''
+else
+echo \'a is not equal b\'
+fi'''
       }
     }
 

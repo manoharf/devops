@@ -2,6 +2,7 @@ pipeline(){
     agent{
         label 'node'
     }
+
     stages(){
         stage('build_image'){
             steps{

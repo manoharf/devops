@@ -7,7 +7,7 @@ pipeline(){
         stage('build_image'){
             steps{
                 sh '''
-                docker build -t i1 /root/docker
+                docker build -t manu /root/docker
                 '''
             }
         }

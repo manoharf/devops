@@ -13,7 +13,7 @@ docker build -t manu1 /root/docker
 stage('container'){
 steps{
 sh '''
-docker run -d --name C2 -p 9001:80 manu1 bash
+docker run -it --name C2 -p 9001:80 manu1 bash
 '''
 }
 }

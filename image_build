@@ -13,8 +13,22 @@ pipeline(){
     stage('container'){
       steps{
          sh '''
-         docker run -it --name C2 -p 9001:80 manu1 bash
+         docker run -d --name C2 -p 9001:80 manu1 bash
          '''
+      }
+    }
+    stage('tagging'){
+      steps{
+        sh '''
+        docker tag manu1:latest manoharf44/manu1:latest
+        '''
+      }
+    }
+    stage('pushing'){
+      steps{
+        sh '''
+        docker push manu1:latest
+        '''
       }
     }
   }

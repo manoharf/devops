@@ -3,13 +3,13 @@ echo "enter file name"
 
 read file name
 
-echo "enter the string"
+ echo "enter the string"
 
 read string
 
 if [ -f $file ]
 then
-echo "find $string"
-grep -i $string $filename
+  echo "find $string"
+  grep -i $string $filename
 fi
 

@@ -13,7 +13,7 @@ pipeline(){
     stage('container'){
       steps{
          sh '''
-         docker run -d --name C2 -p 9001:80 manu1 bash
+         docker run -d --name C3 -p 9002:80 manu1 bash
          '''
       }
     }
@@ -27,7 +27,8 @@ pipeline(){
     stage('pushing'){
       steps{
         sh '''
-        docker push manu1:latest
+        docker login
+        docker push manoharf44/manu1:latest
         '''
       }
     }

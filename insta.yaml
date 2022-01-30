@@ -1,0 +1,15 @@
+---
+- name: manu
+  hosts: app
+  tasks:
+    
+   - name: launching_instance
+      amazon.aws.ec2:
+        image: ami-0af25d0df86db00c1
+        type: t2.micro
+        group: linuxsg
+        region: ap-south-1
+        count: 1
+          
+
+...

@@ -1,0 +1,8 @@
+
+- name: pulling image
+  hosts: app
+  tasks:
+  - name: pulling_image
+    docker_image:
+      name: centos
+

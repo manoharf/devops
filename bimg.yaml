@@ -1,0 +1,10 @@
+---
+- name: building
+  hosts: app
+  tasks:
+    - name: image_building
+      docker_image:
+        path: /root/docker
+        name: bimg1
+
+...

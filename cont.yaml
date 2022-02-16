@@ -1,0 +1,15 @@
+---
+- name: container creating
+  hosts: app
+  tasks:
+    - name: creating_container
+      docker_container:
+        name: C1
+        image: bimg1
+        state: started
+        ports:
+          - "9001:80"
+        tty: true
+        detach: true
+
+...

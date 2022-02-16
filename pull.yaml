@@ -1,5 +1,5 @@
 
-- name: pulling image
+- name: pulling_a_image
   hosts: app
   tasks:
   - name: pulling_image

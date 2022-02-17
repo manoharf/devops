@@ -1,7 +1,7 @@
-- name building
+- name: image
   hosts: app
   tasks:
-    - name: image_building
+    - name: image_buil
       docker_image:
         path: /root/docker
         name: bimg1

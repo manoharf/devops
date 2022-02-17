@@ -1,6 +1,7 @@
 - name: image
   hosts: app
   tasks:
+  
     - name: image_buil
       docker_image:
         path: /root/docker

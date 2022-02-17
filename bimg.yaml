@@ -1,4 +1,4 @@
----
+
 - name: building
   hosts: app
   tasks:
@@ -7,4 +7,4 @@
         path: /root/docker
         name: bimg1
 
-...
+
